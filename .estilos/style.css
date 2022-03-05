@@ -70,6 +70,14 @@ section {
   line-height: 1.3;
 }
 
+.card-header {
+  background-color: #ebe3dc;
+}
+
+.card-body {
+  background-color: #ebe3dc;
+}
+
 .formulario {
   background: #9aa179;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, #9aa179), color-stop(68%, #ccc0a0), color-stop(84%, #ccc0a0));

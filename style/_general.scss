@@ -1,3 +1,5 @@
+$Degraderosa: rgb(235, 227, 220);
+
 .navbar {
   background-image: linear-gradient(to left, #6e6f55, #9aa179);
 }
@@ -11,7 +13,7 @@ section {
 }
 
 .card {
-  background: rgb(235, 227, 220);
+  background: $Degraderosa;
   background: linear-gradient(
     333deg,
     rgba(235, 227, 220, 1) 0%,

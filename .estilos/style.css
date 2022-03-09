@@ -18,7 +18,7 @@ section {
 }
 
 .introSection {
-  background-image: url(imagenes/Productos/TapizMarlo1.jpg);
+  background-image: url(/imagenes/Productos/TapizMarlo1.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;

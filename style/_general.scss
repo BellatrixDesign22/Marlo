@@ -1,11 +1,12 @@
 $Degraderosa: rgb(235, 227, 220);
+$Degradeverde: linear-gradient(to left, #6e6f55, #9aa179);
 
 .navbar {
-  background-image: linear-gradient(to left, #6e6f55, #9aa179);
+  background-image: $Degradeverde;
 }
 
 section {
-  background-image: linear-gradient(to left, #6e6f55, #9aa179);
+  background-image: $Degradeverde;
 }
 
 .cardTextAltura {

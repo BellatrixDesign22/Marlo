@@ -16,10 +16,6 @@ section {
   background: linear-gradient(180deg, #9aa179 17%, #ccc0a0 68%, #ccc0a0 84%);
 }
 
-.cardTextAltura {
-  height: 120px;
-}
-
 .card {
   background: #ebe3dc;
   background: linear-gradient(333deg, #ebe3dc 0%, #ccc0a0 100%);
@@ -37,6 +33,11 @@ section {
   transition: all 0.5s ease;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+}
+
+.list-group-item {
+  background: #ebe3dc;
+  background: linear-gradient(333deg, #ebe3dc 0%, #ccc0a0 100%);
 }
 
 .btn {
@@ -63,6 +64,10 @@ section {
   background: #ccc0a0;
   background: -webkit-gradient(linear, left top, right top, from(#ccc0a0), color-stop(52%, #9aa179), color-stop(97%, #6e6f55));
   background: linear-gradient(90deg, #ccc0a0 0%, #9aa179 52%, #6e6f55 97%);
+}
+
+.card-body-altura {
+  height: 270px;
 }
 
 .introSection {
@@ -134,14 +139,6 @@ section {
   transition: all 0.5s ease;
   -webkit-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
-}
-
-.card-header {
-  background-color: #ebe3dc;
-}
-
-.card-body {
-  background-color: #ebe3dc;
 }
 
 .formulario {

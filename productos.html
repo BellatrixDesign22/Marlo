@@ -14,44 +14,48 @@
 <link rel="stylesheet" href="style.css">
 
     <!-- CSS propio -->
-    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href=".estilos/style.css" />
     <title>Marló</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light p-0 ">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
       <div class="container">
+        
         <a class="navbar-brand" href="index.html">
           <img src="imagenes/Logo/Logo.png" width="150px" alt="" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-         
-         
-         
-          <ul class="navbar-nav ">
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarWithDropdown"
+aria-controls="navbarWithDropdown"
+aria-expanded="false"
+aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+</button>
+
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarWithDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="productos.html">Productos</a>
+              <a class="nav-link active" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="quienessomos.html">Quiénes somos</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="contacto.html">Contacto</a>
-            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quiénes somos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="quienessomos.html">Quiénes somos</a></li>
+                <li><a class="dropdown-item" href="informacion.html">Preguntas frecuentes</a></li>
+              </ul>
+
           </ul>
         </div>
       </div>
@@ -59,11 +63,12 @@
 
  <!--CARDS-->
 
+
  <section class="px-5 py-2 pb-5">
   <div class="container py-1"></div>
   <div class="row g-5">
-   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-     <div class="card text-center">
+   <div class="col col-lg-4 col-md-4 col-sm-6 col-12 ">
+     <div class="card card-scale text-center border-0">
        <img src="imagenes/Productos/CestoCedro.jpg" class="card-img-top" alt="card-grid-image">
        <div class="card-body">
          <h5 class="card-title">Card title</h5>
@@ -72,18 +77,26 @@
         </div>
      </div>
    </div>
+
+
+   
+    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
+      <div class="card card-scale text-center border-0">
+        <img src="imagenes/Productos/Posavasos.jpg" class="card-img-top" alt="card-grid-image">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <button type="button" class="btn btn-dark">Dark</button>
+         </div>
+      </div>
+    </div>
+   
+
+
+
+
    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-     <div class="card text-center">
-       <img src="imagenes/Productos/Posavasos.jpg" class="card-img-top" alt="card-grid-image">
-       <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-         <button type="button" class="btn btn-dark">Dark</button>
-        </div>
-     </div>
-   </div>
-   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-     <div class="card text-center">
+     <div class="card card-scale text-center border-0">
        <img src="imagenes/Productos/PosavasosEspiral.jpg" class="card-img-top" alt="card-grid-image">
        <div class="card-body">
          <h5 class="card-title">Card title</h5>
@@ -93,7 +106,7 @@
      </div>
    </div>
    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-     <div class="card text-center">
+     <div class="card card-scale text-center border-0">
        <img src="imagenes/Productos/TapizGaia.jpg" class="card-img-top" alt="card-grid-image">
        <div class="card-body">
          <h5 class="card-title">Card title</h5>
@@ -104,7 +117,7 @@
    </div>
 
    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-    <div class="card text-center">
+    <div class="card card-scale text-center border-0">
       <img src="imagenes/Productos/TapizHedera.jpg" class="card-img-top" alt="card-grid-image">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -115,7 +128,7 @@
   </div>
 
   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-    <div class="card text-center">
+    <div class="card card-scale text-center border-0">
       <img src="imagenes/Productos/TapizLeca.jpg" class="card-img-top" alt="card-grid-image">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -127,7 +140,7 @@
 
 
   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-    <div class="card text-center">
+    <div class="card card-scale text-center border-0">
       <img src="imagenes/Productos/TapizMarlo1.jpg" class="card-img-top" alt="card-grid-image">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -139,7 +152,7 @@
 
 
   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-    <div class="card text-center">
+    <div class="card card-scale text-center border-0">
       <img src="imagenes/Productos/TapizRaices.jpg" class="card-img-top" alt="card-grid-image">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -150,7 +163,7 @@
   </div>
 
   <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-    <div class="card text-center">
+    <div class="card card-scale text-center border-0">
       <img src="imagenes/Productos/PashminaNativa.jpg" class="card-img-top" alt="card-grid-image">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -170,68 +183,64 @@
     <!--FOOTER-->
 
 <footer class="page-footer font-small unique-color-dark bg-dark">
-    <div >
-      <div class="container">
-        <div class="row py-4 d-flex align-items-center">
-    <div class="container text-center text-md-left mt-5">
-      <div class="row mt-3">
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">AYUDA</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <div class="items">
-              <p>
-                  <a href="#!">Comprar online</a>
-                </p>
-                <p>
-                  <a href="#!">Medios de Pago</a>
-                </p>
-                <p>
-                  <a href="#!">Envío</a>
-                </p>
-                <p>
-                  <a href="#!">Devoluciones</a>
-                </p>
-          </div>
-  
+  <div >
+    <div class="container">
+      <div class="row py-1 d-flex align-items-center">
+  <div class="container text-center text-md-left mt-5">
+    <div class="row mt-3">
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">AYUDA</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <div class="items">
+
+          <p>
+            <a href="informacion.html">Medios de Pago</a>
+          </p>
+          <p>
+            <a href="informacion.html">Envío</a>
+          </p>
+          <p>
+            <a href="informacion.html">Devoluciones</a>
+          </p>
         </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">Quiénes somos</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <div class="items">
-              <p>
-                  <a href="#!">Sobre la Empresa</a>
-                </p>
-                <p>
-                  <a href="#!">Nuestras Tiendas</a>
-                </p>
-                <p>
-                  <a href="#!">Gift Card</a>
-                </p>
-          </div>
-  
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase font-weight-bold">contacto</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <div class="items">           <p>
-              <a href="#!">Córdoba 5008, Argentina</a>
-            </p>
+
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Quiénes somos</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <div class="items">
             <p>
-              <a href="#!">marlomacrame@gmail.com</a>
-            </p>
-            <p>
-              <a href="#!">3518033056</a>
-            </p></div> 
-  
+                <a href="quienessomos.html">Sobre la Empresa</a>
+              </p>
+
+              <p>
+                <a href="#!">Gift Card</a>
+              </p>
         </div>
+
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase font-weight-bold">contacto</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <div class="items">           <p>
+            <a href="https://goo.gl/maps/zwtw326ihmdg5kEU8">Córdoba 5008, Argentina</a>
+          </p>
+          <p>
+            <a href="#!">marlomacrame@gmail.com</a>
+          </p>
+          <p>
+            <a href="#!">3518033056</a>
+          </p></div> 
+
       </div>
     </div>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
   
   
       <!-- Option 1: Bootstrap Bundle with Popper -->

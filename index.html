@@ -14,49 +14,55 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href=".estilos/style.css">
 
     <title>Marló</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light p-0 ">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
       <div class="container">
+        
         <a class="navbar-brand" href="index.html">
           <img src="imagenes/Logo/Logo.png" width="150px" alt="" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-         
-         
-         
-          <ul class="navbar-nav ">
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarWithDropdown"
+aria-controls="navbarWithDropdown"
+aria-expanded="false"
+aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+</button>
+
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarWithDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="productos.html">Productos</a>
+              <a class="nav-link active" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--elemento" href="quienessomos.html">Quiénes somos</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="contacto.html">Contacto</a>
-            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quiénes somos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item " href="quienessomos.html">Quiénes somos</a></li>
+                
+                <li><a class="dropdown-item" href="informacion.html">Preguntas frecuentes</a></li>
+              </ul>
+
           </ul>
         </div>
       </div>
     </nav>
+
 
     <!-- CARRUCEL -->
     <div
@@ -119,83 +125,96 @@
     </div>
 
     <!-- SECCIONES -->
-    <section class="p-5 text-sn-smart">
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content">
-          <div>
+
+    
+<!-- Intro -->
+   
+    <section class=" text-sn-smart">
+      <section class="pt-5 section-section">
+        <div class="container pb-4">
+          <div class="d-sm-flex align-items-center justify-content mb-4">
+            <div>
+            
+              <h5 class="mt-0 pt-0">Macramé | Telar | Deco</h2>
+  
+              <p class="lead">
+  Tejidos únicos y con amor. Un mimo para vos y tu rincón favorito de la casa.
+              </p>
+              <button class="btn btn-dark">
+                <a href="productos.html" class="text-uppercase font-weight-bold btn btn-dark">VER MÁS</a></button>
+            </div>
+  
+          </div>
+        </div>
+   
+  
+  <!-- Tarjetas -->
+  
+  
+       <div class="tarjetas">
+         <div class="container">
+        <div class="row text-center">
+
           
-            <h5 class="mt-0 pt-0">Macramé | Telar | Deco</h2>
-
-            <p class="lead">
-Tejidos únicos y con amor. Un mimo para vos y tu rincón favorito de la casa.
-            </p>
-            <button class="btn btn-dark">Ver más</button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-   <!-- Sección cajas -->
-
-   <section class="p-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md">
-          <div class="card bg-dark text-dark">
-            <div class="card-body text-center">
-                <div class="image">
-                    <img class="img-fluid" src="imagenes/Cajas/3.jpg" alt="">
+            <div class="col-md mb-5 mx-2">
+              <div class="card card-scale bg-dark text-dark">
+                <div class="card-body text-center">
+                    <div class="image">
+                        <img class="img-fluid" src="imagenes/Cajas/3.jpg" alt="">
+                    </div>
+                  <div class="h1">
+                    <i class="bi bi-brightness-high"></i>
+                  </div>
+                  <div class="h3.card-title mb-3">REINVENTARSE</div>
+                  <p class="card-text cardTextAltura"> Dedicate un ratito para vos ... Hoy quiero hablarte de la pausa para crear. Está más que claro, es mi preferida! Todos somos creativos por naturaleza, a mayor o menor medida, según cómo lo desarrollemos
+                  </p>
+                  <a href="quienessomos.html" class="btn btn-outline-dark">Más</a>
                 </div>
-              <div class="h1">
-                <i class="bi bi-brightness-high"></i>
               </div>
-              <div class="h3.card-title mb-3">REINVENTARSE</div>
-              <p class="card-text cardTextAltura"> Dedicate un ratito para vos ... Hoy quiero hablarte de la pausa para crear. Está más que claro, es mi preferida! Todos somos creativos por naturaleza, a mayor o menor medida, según cómo lo desarrollemos
-              </p>
-              <a href="" class="btn btn-outline-dark">Más</a>
             </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-dark text-dark">
-            <div class="card-body text-center">
-                <div class="image">
-                    <img class="img-fluid" src="imagenes/Cajas/2.jpg" alt="">
+            <div class="col-md mb-5 mx-2">
+              <div class="card card-scale bg-dark text-dark">
+                <div class="card-body text-center">
+                    <div class="image">
+                        <img class="img-fluid" src="imagenes/Cajas/2.jpg" alt="">
+                    </div>
+                  <div class="h1">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <div class="h3.card-title mb-3">MARLÓ DECO</div>
+                  <p class="card-text cardTextAltura">
+                    MARLÓ nace de la necesidad de crear un espacio para compartir mis creaciones y mis conocimientos a quienes quieran adentrarse en este arte tan pero tan hermoso.
+                  </p>
+                  <a href="quienessomos.html" class="btn btn-outline-dark">Más</a>
                 </div>
-              <div class="h1">
-                <i class="bi bi-house-door"></i>
               </div>
-              <div class="h3.card-title mb-3">MARLÓ DECO</div>
-              <p class="card-text cardTextAltura">
-                MARLÓ nace de la necesidad de crear un espacio para compartir mis creaciones y mis conocimientos a quienes quieran adentrarse en este arte tan pero tan hermoso.
-              </p>
-              <a href="" class="btn btn-outline-dark">Más</a>
             </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-dark text-dark">
-            <div class="card-body text-center">
-                <div class="image">
-                    <img class="img-fluid" src="imagenes/Cajas/1.jpg" alt="">
+            <div class="col-md mb-5 mx-2">
+              <div class="card card-scale bg-dark text-dark">
+                <div class="card-body text-center">
+                    <div class="image">
+                        <img class="img-fluid" src="imagenes/Cajas/1.jpg" alt="">
+                    </div>
+                  <div class="h1">
+                    <i class="bi bi-brightness-high"></i>
+                  </div>
+                  <div class="h3.card-title mb-3">TIPS PARA CUIDAR TUS TEJIDOS</div>
+                  <p class="card-text cardTextAltura">
+    Mantené tu tejido como el primer día. Te cuento algunos consejos para que cuides tu tejido de macremé. Recordá que son piezas delicadas y necesitan ser tratadas con mucho amor!
+                  </p>
+                  <a href="quienessomos.html" class="btn btn-outline-dark">Más</a>
+    
+                  
                 </div>
-              <div class="h1">
-                <i class="bi bi-brightness-high"></i>
               </div>
-              <div class="h3.card-title mb-3">TIPS PARA CUIDAR TUS TEJIDOS</div>
-              <p class="card-text cardTextAltura">
-Mantené tu tejido como el primer día. Te cuento algunos consejos para que cuides tu tejido de macremé. Recordá que son piezas delicadas y necesitan ser tratadas con mucho amor!
-              </p>
-              <a href="" class="btn btn-outline-dark">Más</a>
+            </div>
+          
 
-              
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+      </div></div>
+      </section>
+      
+    
   </section>
 
   
@@ -211,18 +230,16 @@ Mantené tu tejido como el primer día. Te cuento algunos consejos para que cuid
         <h6 class="text-uppercase font-weight-bold">AYUDA</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <div class="items">
-            <p>
-                <a href="#!">Comprar online</a>
-              </p>
-              <p>
-                <a href="#!">Medios de Pago</a>
-              </p>
-              <p>
-                <a href="#!">Envío</a>
-              </p>
-              <p>
-                <a href="#!">Devoluciones</a>
-              </p>
+
+          <p>
+            <a href="informacion.html">Medios de Pago</a>
+          </p>
+          <p>
+            <a href="informacion.html">Envío</a>
+          </p>
+          <p>
+            <a href="informacion.html">Devoluciones</a>
+          </p>
         </div>
 
       </div>
@@ -231,11 +248,9 @@ Mantené tu tejido como el primer día. Te cuento algunos consejos para que cuid
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <div class="items">
             <p>
-                <a href="#!">Sobre la Empresa</a>
+                <a href="quienessomos.html">Sobre la Empresa</a>
               </p>
-              <p>
-                <a href="#!">Nuestras Tiendas</a>
-              </p>
+
               <p>
                 <a href="#!">Gift Card</a>
               </p>
@@ -246,7 +261,7 @@ Mantené tu tejido como el primer día. Te cuento algunos consejos para que cuid
         <h6 class="text-uppercase font-weight-bold">contacto</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <div class="items">           <p>
-            <a href="#!">Córdoba 5008, Argentina</a>
+            <a href="https://goo.gl/maps/zwtw326ihmdg5kEU8">Córdoba 5008, Argentina</a>
           </p>
           <p>
             <a href="#!">marlomacrame@gmail.com</a>

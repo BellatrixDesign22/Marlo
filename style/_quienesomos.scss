@@ -1,5 +1,7 @@
+$Degraderosa: rgb(235, 227, 220);
+
 .introSection {
-  background-image: url(/imagenes/Productos/PashminaNativa.jpg);
+  background-image: url(/imagenes/Productos/TapizMarlo1.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,12 +10,14 @@
   position: relative;
   object-fit: cover;
   display: flex;
+
   .flex-container {
     color: black;
+    border: 3px solid #ebe3dc;
+    border-radius: 20px;
     background-color: #ebe3dc;
-    opacity: 0.7;
-
-    text-align: center;
+    opacity: 0.5;
+    text-align: justify;
     position: absolute;
     top: 15%;
     left: 10%;
@@ -25,10 +29,12 @@
     cursor: pointer;
     .flex-intro-section {
       .flex-item-intro {
+        text-align: center;
         font-size: 10 + 3 rem;
         font-weight: 400;
       }
       .flex-item-secundario {
+        text-align: center;
         font-weight: 300;
         font-size: 1.3rem;
       }
@@ -41,7 +47,17 @@
     }
   }
 }
-$Degraderosa: rgb(235, 227, 220);
+
+.flex-container {
+  flex-wrap: wrap;
+}
+
+.flex-container:hover,
+.flex-container:focus {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  transform: scale(1.08, 1.08);
+}
 
 .card-header {
   background-color: $Degraderosa;

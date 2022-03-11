@@ -36,7 +36,6 @@ section {
 }
 
 .list-group-item {
-  background: #ebe3dc;
   background: linear-gradient(333deg, #ebe3dc 0%, #ccc0a0 100%);
 }
 

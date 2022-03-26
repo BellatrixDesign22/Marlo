@@ -1,0 +1,40 @@
+$primary: #ccc0a0;
+
+// COLOR HEADER
+.navbar {
+  background: rgb(204, 192, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(204, 192, 160, 1) 0%,
+    rgba(154, 161, 121, 1) 52%,
+    rgba(110, 111, 85, 1) 97%
+  );
+}
+
+// ANIMACION TARJETAS
+.card-scale {
+  flex-wrap: wrap;
+}
+.card-scale:hover,
+.card-scale:focus {
+  opacity: 1.2;
+  transition: all 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
+
+// BOTON VER MAS / ANIMACION BOTON
+.btn {
+  flex-wrap: wrap;
+}
+.btn:hover,
+.btn:focus {
+  opacity: 1.2;
+  transition: all 0.5s ease;
+  transform: scale(1.1, 1.1);
+}
+
+// FOOTER
+footer a {
+  text-decoration: none;
+  color: white;
+}

@@ -19,5 +19,6 @@
   "homepage": "https://github.com/BellatrixDesign22/Marlo#readme",
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "devDependencies": {}
 }

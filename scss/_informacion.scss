@@ -1,0 +1,18 @@
+.accordion-item {
+  background: rgb(204, 192, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(204, 192, 160, 1) 0%,
+    rgba(154, 161, 121, 1) 52%,
+    rgba(110, 111, 85, 1) 97%
+  );
+  .accordion-button {
+    background: rgb(204, 192, 160);
+    background: linear-gradient(
+      90deg,
+      rgba(204, 192, 160, 1) 0%,
+      rgba(154, 161, 121, 1) 52%,
+      rgba(110, 111, 85, 1) 97%
+    );
+  }
+}

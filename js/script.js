@@ -33,6 +33,13 @@ catalogo.forEach((objeto) => {
   );
 });
 
+/* let search = document.getElementById("nombreProducto").value;
+let buscar = catalogo.find((obj) => {
+  return obj.nombre == search;
+});
+
+console.log(buscar); */
+
 let search = document.getElementById("nombreProducto").value;
 let buscar = catalogo.find((obj) => {
   return obj.nombre == search;
@@ -65,5 +72,10 @@ catalogo.forEach((el) => {
       `;
   document.getElementById("prods").appendChild(nodo);
 });
+
+// CEREBRO TRABADO, COMO VALIDAR UNO U OTRO DATO
+btn.onclick = () => {
+  console.log(nombreProducto.value);
+};
 
 let carrito = [];

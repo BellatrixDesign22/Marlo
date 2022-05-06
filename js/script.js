@@ -33,13 +33,6 @@ catalogo.forEach((objeto) => {
   );
 });
 
- let search = document.getElementById("nombreProducto").value;
-let buscar = catalogo.find((obj) => {
-  return obj.nombre == search;
-});
-
-console.log(buscar); */
-
 let search = document.getElementById("nombreProducto").value;
 let buscar = catalogo.find((obj) => {
   return obj.nombre == search;
@@ -82,54 +75,8 @@ let carrito = [];
 const pieza = document.getElementById(".cestoCedro");
 console.log(pieza);
 
-
 const guardarLocal = (clave, valor) => {
   localStorage.setItem(clave, valor);
 };
 
 guardarLocal("lista", JSON.stringify(catalogo));
-
-
-
-//FORMULARIO DE CONTACTO
-
-class Persona {
-  constructor(nombre, apellido, email, direccion, ciudad, pais, consulta) {
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.email = email;
-    this.ciudad = ciudad;
-    this.pais = pais;
-    this.consulta = consulta;
-  }
-}
-
-const listaPersonas = [];
-
-const nuevaPersona = () => {
-  let nombre = prompt("Cual es tu nombre");
-  let apellido = prompt("Cual es tu apellido");
-  let email = prompt("Cual es tu email");
-  let ciudad = prompt("Cual es tu ciudad");
-  let pais = prompt("Cual es tu nompaisbre");
-  let observaciones = prompt("Cual es tu consulta");
-
-  let persona = new Persona(
-    nombre,
-    apellido,
-    email,
-    direccion,
-    ciudad,
-    pais,
-    consulta
-  );
-
-  if (localStorage.getItem("personas") == null) {
-    listaPersonas.push(persona);
-    localStorage.setItem("personas0".JSON.stringify(listaPersonas));
-  } else {
-    const listaPersonaNueva = JSON.parse(localStorage.getItem("personas"));
-    listaPersonaNueva.push(persona);
-    localStorage.setItem("personas", JSON.stringify(listaPersonaNueva));
-  }
-};

@@ -42,3 +42,11 @@ const nuevaPersona = () => {
     localStorage.setItem("personas", JSON.stringify(listaPersonaNueva));
   }
 };
+
+enviarFormulario.onclick = () => {
+  swal({
+    title: "Su formulario ha sido enviado!",
+    icon: "success",
+    button: "OK",
+  });
+};

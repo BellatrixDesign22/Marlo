@@ -12,12 +12,27 @@
       crossorigin="anonymous"
     />
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
+
+
     <link rel="stylesheet" href="css/custom.css">
 
     <!-- CSS propio -->
-    <link rel="stylesheet" href="estilos/style.css" />
+
+
     <title>Productos Marló</title>
   </head>
+
+
+
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light p-0">
@@ -52,16 +67,26 @@ aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
               <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Quiénes somos
               </a>
+              
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="quienessomos.html">Quiénes somos</a></li>
                 <li><a class="dropdown-item" href="informacion.html">Preguntas frecuentes</a></li>
               </ul>
+              
 
           </ul>
+
+          <a class="cart-btn">
+            <i id="cart" class="fa fa-shopping-bag" aria-hidden="true"></i>
+            
+            <span class="cart-quantity">0</span>
+          </a>
         </div>
-      </div>
+
+      </div> 
     </nav>
 
+    
 <!--BUSCADOR-->
     <form class="row g-3 formulario px-5 py-5">
 
@@ -75,216 +100,105 @@ aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
         BUSCAR
       </button>
 
+ <!--cart modal-->
+<div class="cart-modal-overlay">
+<div class="cart-modal">
+  <i id="close-btn"  class="fas fa-times"></i>
+  <h1 class="cart-is-empty">El carrito está vacio</h1>
+  <div class="product-rows"></div>
+  <div class="total">
+    <h1 class="cart-total">TOTAL</h1>
+    <h2 class="total-price">$0</h2>
+    <button class="purchase-btn">Comprar</button>
 
+  </div>
 
+</div>
+</div>
 
 
  <!--CARDS-->
-
-<!--CESTO CEDRO-->
- <section class="px-5 py-2 pb-5" id="prods">
-
   
-  <div class="container py-1">
-  <div class="row g-5">
-
-   <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-     <div class="card card-scale text-center border-0">
-       <img src="imagenes/Productos/CestoCedro.jpg" class="card-img-top" alt="card-grid-image">
-       
-         <div class="card-body-altura pb-4">
-           <h6 class="card-title pt-2 cestoCedro" > <strong >CESTO CEDRO</strong> </h6>
-          <p class="card-text">
-            
-             <ul class="list-group">
-               <li class="list-group-item">Técnica: Crochet</li>
-               <li class="list-group-item">Tamaño: 14x10cm</li>
-               <li class="list-group-item">Material: Hilo de algodón y yute
-              </li>
-             </ul>
-          </p>
-          <button type="button" class="btn btn-dark" id="cestoCedro">COMPRAR</button></div>
-         
-        
-     </div>
-   </div>
-
-   <!--POSAVASOS RECTANGULAR-->
-   <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-      <div class="card card-scale text-center border-0">
-        <img src="imagenes/Productos/Posavasos.jpg" class="card-img-top" alt="card-grid-image">
-       
-          <div class="card-body-altura pb-4">
-            <h6 class="card-title pt-2"><strong>POSAVASOS RECTANGULAR</strong> </h6>
-          <p class="card-text ">
-            
-            <ul class="list-group">
-              <li class="list-group-item">Técnica: Macramé</li>
-              <li class="list-group-item">Tamaño: 17x9cm (incluye flecos)</li>
-              <li class="list-group-item">Material: Hilo de algodón de 27 hebras
-                
-             </li>           
-            </ul>
-          </p>
-          <button type="button" class="btn btn-dark" id="posavasosRectangular">COMPRAR</button>
-          </div>
-         
-      </div>
-    </div>
-   
-
-
-<!--POSAVASOS ESPIRAL-->
-    <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-     <div class="card card-scale text-center border-0">
-       <img src="imagenes/Productos/PosavasosEspiral.jpg" class="card-img-top" alt="card-grid-image">
-       
-         <div class="card-body-altura pb-4">
-          <h6 class="card-title pt-2"><strong>POSAVASOS ESPIRAL</strong> </h6>
-          
-          <p class="card-text">
-            
-            <ul class="list-group">
-              <li class="list-group-item">Técnica: Macramé</li>
-              <li class="list-group-item">Tamaño: 17cm (incluye flecos)</li>
-              <li class="list-group-item">Material: Hilo de algodón de 27 hebras
-             </li>           
-            </ul></p>
-          <button type="button" class="btn btn-dark" id="posavasosEspiral">COMPRAR</button>
-         </div>
-         
-        
-     </div>
-   </div>
-
-
-
-
-<!--TAPIZ GAIA-->
-   <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-     <div class="card card-scale text-center border-0">
-       <img src="imagenes/Productos/TapizGaia.jpg" class="card-img-top" alt="card-grid-image">
-       <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>TAPIZ GAIA</strong> </h6>
-        
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Macramé</li>
-            <li class="list-group-item">Tamaño: 95x85cm</li>
-            <li class="list-group-item">Material: Varilla de madera e hilo de algodón
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="tapizGaia">COMPRAR</button>
-       </div>
-     </div>
-   </div>
-
-   <!--TAPIZ HEDERA-->
-   <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-    <div class="card card-scale text-center border-0">
-      <img src="imagenes/Productos/TapizHedera.jpg" class="card-img-top" alt="card-grid-image">
-      <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>TAPIZ HEDERA</strong> </h6>
-        
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Macramé</li>
-            <li class="list-group-item">Tamaño: 35x55cm (incluye flecos)</li>
-            <li class="list-group-item">Material: Varilla de madera e hilo de algodón
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="tapizHedera">COMPRAR</button>
-       </div>
-    </div>
+<div class="items-container">
+  <!--CESTO CEDRO-->
+      <div class="card-1 card" id="item1">
+        <img src="imagenes/Productos/CestoCedro.jpg" class="product-image" alt="card-grid-image">
+        <h3 class="card-title">CESTO CEDRO</h3>
+        <p class="product-price">$2000</p>
+        <button class="add-to-cart">COMPRAR</button>
   </div>
 
+  <!--POSAVASOS-->
+      <div class="card-2 card" id="item2">
+      <img src="imagenes/Productos/Posavasos.jpg" class="product-image" alt="card-grid-image">
+        <h3 class="card-title">POSAVASOS</h3>
+        <p class="product-price">$2000</p>
+        <button class="add-to-cart">COMPRAR</button>      
+  </div>
+    <!--POSAVASOS ESPIRAL-->
+      <div class="card-3 card" id="item3">
+        <img src="imagenes/Productos/PosavasosEspiral.jpg" class="product-image" alt="card-grid-image">
+
+          <h3 class="card-title">POSAVASOS ESPIRAL</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button>      </div>
+  <!--TAPIZ GAIA-->
+
+      <div class="card-3 card" id="item3">
+        <img src="imagenes/Productos/TapizGaia.jpg" class="product-image" alt="card-grid-image">  
+          <h3 class="card-title">TAPIZ GAIA</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button>      
+  </div>
+  <!--TAPIZ HEDERA-->
+      <div class="card-4 card" id="item4">
+        <img src="imagenes/Productos/TapizHedera.jpg" class="product-image" alt="card-grid-image">   
+          <h3 class="card-title">TAPIZ HEDERA</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button>      
+    </div>
   <!--TAPIZ LECA-->
-  <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-    <div class="card card-scale text-center border-0">
-      <img src="imagenes/Productos/TapizLeca.jpg" class="card-img-top" alt="card-grid-image">
-      <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>TAPIZ LECA</strong> </h6>
-        
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Macramé</li>
-            <li class="list-group-item">Tamaño: 35x55cm (incluye flecos)</li>
-            <li class="list-group-item">Material: Varilla de madera e hilo de algodón
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="tapizLeca">COMPRAR</button>
-       </div>
+      <div class="card-5 card" id="item5">
+        <img src="imagenes/Productos/TapizLeca.jpg" class="product-image" alt="card-grid-image">      
+          <h3 class="card-title">TAPIZ LECA</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button>     
     </div>
-  </div>
-
-<!--TAPIZ MARLO-->
-  <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-    <div class="card card-scale text-center border-0">
-      <img src="imagenes/Productos/TapizMarlo1.jpg" class="card-img-top" alt="card-grid-image">
-      <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>TAPIZ MARLÓ</strong> </h6>
+  <!--TAPIZ MARLO-->
+     <div class="card-6 card" id="item6">
+        <img src="imagenes/Productos/TapizMarlo1.jpg" class="product-image" alt="card-grid-image">
         
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Macramé</li>
-            <li class="list-group-item">Tamaño: 90x90cm</li>
-            <li class="list-group-item">Material: Varilla de madera e hilo de algodón
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="tapizMarlo">COMPRAR</button>
-       </div>
-    </div>
+          <h3 class="card-title">TAPIZ MARLO</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button> 
   </div>
+   <!--TAPIZ RAICES-->
 
-<!--TAPIZ RAICES-->
-  <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-    <div class="card card-scale text-center border-0">
-      <img src="imagenes/Productos/TapizRaices.jpg" class="card-img-top" alt="card-grid-image">
-      <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>TAPIZ RAICES</strong> </h6>
-        
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Telar</li>
-            <li class="list-group-item">Tamaño: 41x48cm (incluye flecos)</li>
-            <li class="list-group-item">Material: Varilla de madera e hilo de algodón
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="tapizRaices">COMPRAR</button>
-       </div>
+      <div class="card-6 card"  id="item6">
+        <img src="imagenes/Productos/TapizRaices.jpg" class="product-image" alt="card-grid-image">
+          <h3 class="card-title">TAPIZ RAICES</h3>
+          <p class="product-price">$2000</p>
+          <button class="add-to-cart">COMPRAR</button>      
     </div>
-  </div>
-<!--PASHMINA NATIVA-->
-  <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-    <div class="card card-scale text-center border-0">
-      <img src="imagenes/Productos/PashminaNativa.jpg" class="card-img-top" alt="card-grid-image">
-      <div class="card-body-altura pb-4">
-        <h6 class="card-title pt-2"><strong>PASHMINA NATIVA</strong> </h6>
-        
-        <p class="card-text">
-          <ul class="list-group">
-            <li class="list-group-item">Técnica: Telar de peine</li>
-            <li class="list-group-item">Materiales: Hilo de algodón </li>
-            <li class="list-group-item">Nota: Se realizan a pedido según disponibilidad de colores
-           </li>           
-          </ul>
-        </p>
-        <button type="button" class="btn btn-dark" id="pashmina">COMPRAR</button>
-       </div>
-    </div>
-  </div>
+</div>
 
 
 
- </div>
- </div>
 
- </section>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
  
   <!--FOOTER-->
 
@@ -358,7 +272,7 @@ aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
       ></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-      <script src="js/script.js"></script>
+      
       <script src="js/scripproductos.js"></script>
 
   </body>
